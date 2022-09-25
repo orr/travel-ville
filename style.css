@@ -1,0 +1,243 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-header {
+    width: 100%;
+    height: 75px;
+    background: #009688;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.63); 
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.63);
+    position: relative;
+}
+
+.main-header-container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main-header-container .logo {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-header-container nav {
+    height: 100%;
+}
+.main-header-container ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-header-container ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    transition: all ease 200ms;
+}
+.main-header-container ul li:hover {
+    background-color: #00877A;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+}
+
+.hero ul, .hero li {
+    height: 100%;
+}
+
+.hero-container.bg1 {
+    width: 100%;
+    height: 100%;
+    background: url(img/resort1.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-container h1 {
+    font-size: 3.5rem;
+    font-weight: 400    ;
+}
+
+.hero-container p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #009688;
+    padding: 1.2rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .6px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    transition: background-color ease-in 400ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00877A;
+}
+
+.search {
+    width: 100%;
+    background-color: #009688 ;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.search input {
+    width: 70%;
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    color: rgb(158, 158, 158);
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #d1d1d1;
+}
+
+.cards {
+    color: black;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 1rem 0;
+}
+
+.cards-container {
+    width:  80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 2rem 1rem;
+    border-radius: 2px;
+    align-items: center;
+}
+.card i {
+    font-size: 5rem;
+    color: #00877A;
+    margin-bottom: 2rem;
+}
+
+.card h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    text-align: center;
+}
+
+.popular-places {
+    width: 100%;
+    background-color: #FFFFFF;
+    
+}
+
+.popular-places-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-places-container h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.popular-places-container h1 span {
+    color: #00877A;
+}
+
+.popular-places-container .places {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.popular-places-container .place {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.popular-places-container .place .place-top {
+    height: 270px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background: url(img/resort1.jpg) no-repeat center center/cover;
+    padding-left: 1rem;
+    color: white;
+}
+
+.popular-places-container .place .place-bottom {
+    padding: 1.2rem 1rem;
+    color: black;
+    font-size: .93rem;
+    font-weight: 400;
+}
+
+.btn.contact {
+    background-color: #424242;
+}
