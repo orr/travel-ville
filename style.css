@@ -25,7 +25,7 @@ ul {
     background: #009688;
     -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.63); 
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.63);
-    position: relative;
+    position: fixed;
 }
 
 .main-header-container {
@@ -238,7 +238,7 @@ ul {
     font-weight: 400;
 }
 
-.btn.contact {
+.btn.btn-contact {
     background-color: #424242;
 }
 
@@ -415,4 +415,17 @@ ul {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #E0E0E0;
 
+}
+
+.footer {
+    width: 100%;
+    padding: 2rem;
+    color: white;
+    background-color: #009688;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 1.68rem;
+    font-weight: 400;
 }
