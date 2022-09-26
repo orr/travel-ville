@@ -288,6 +288,10 @@ ul {
     gap: 1rem;
 }
 
+.social-links i {
+    font-size: 2rem;
+}
+
 .gallery {
     width: 100%;
     padding: 2rem;
@@ -356,17 +360,21 @@ ul {
 
 .contact {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
+.contact-container-left {
+    width: 50%;
+}
 
 
 .contact-container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    display: grid;
+    display: flex;
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    
 }
 
 .contact-info {
@@ -380,7 +388,7 @@ ul {
     align-items: center;
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-    max-height: 300px;
+    margin-bottom: 1rem;
 }
 
 .contact-info i {
@@ -397,11 +405,32 @@ ul {
     font-weight: 400;
 }
 
+.location {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    border: 1px solid #E0E0E0;
+}
+
+.location h1 {
+    padding: 2rem 1rem 1.5rem 1rem;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.location p {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #E0E0E0;
+
+}
+
 .contact-container form {
     background-color: #EEEEEE;
+    width: 50%;
     padding: 2rem 1.5rem;
     border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    height: fit-content;
 }
 
 .contact-container form h1 {
@@ -410,6 +439,7 @@ ul {
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
+
 
 .form-input {
     margin-bottom: 1rem;
@@ -448,25 +478,7 @@ ul {
     margin-top: 2rem;
 }
 
-.location {
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.87);
-    border: 1px solid #E0E0E0;
-    transform: translateY(-160px);
-}
 
-.location h1 {
-    padding: 2rem 1rem 1.5rem 1rem;
-    border-bottom: 1px solid #E0E0E0;
-    font-size: 2.2rem;
-    font-weight: 400;
-}
-
-.location p {
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid #E0E0E0;
-
-}
 
 .footer {
     width: 100%;
@@ -528,15 +540,37 @@ ul {
         display: flex;
         justify-content: center;
     }
-    
-    .main-header-container ul li:last-of-type {
-        
-    }
-    
-    
     .main-header-container #menu {
         
         display: block;
     }
     
+}
+
+@media (max-width: 750px) {
+    .cards-container {
+        flex-direction: column;
+    }
+    .popular-places-container .places {
+        grid-template-columns: 1fr;
+    }
+    .gallery .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container-left {
+        width: 100%;
+    }
+    .contact-container form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .gallery .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
