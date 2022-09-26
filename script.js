@@ -6,4 +6,17 @@ function addPanel(node ) {
 
 document.querySelectorAll('.gallery-item-container').forEach(addPanel );
 
-//document.querySelector('.gallery-item-container').classList.toggle
+
+document.querySelector('#menu').addEventListener('click', () => {
+    document.querySelector('.main-header-container nav ').classList.toggle('open');
+    document.querySelector('#close-menu').classList.toggle('show');
+    document.querySelector('body').classList.toggle('close');
+
+});
+
+document.querySelector('#close-menu').addEventListener('click', () => {
+    document.querySelector('.main-header-container nav ').classList.toggle('open');
+    document.querySelector('#close-menu').classList.toggle('show');
+    document.querySelector('body').classList.toggle('close');
+
+});
